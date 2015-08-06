@@ -12,6 +12,3 @@ for x in range (1, 53):
        deck[x] = 300 +  x - 26
     if x>39:
        deck[x] = 400 + x - 39
-
-for x in range (1, 53):
-    print (deck[x])
