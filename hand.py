@@ -25,13 +25,13 @@ def deal(target):
 
 def name(card):
    if int(card/100) == 1:
-       suit = "Sp"
+       suit = "Spade"
    elif int(card/100) == 2:
-       suit = "Cb"
+       suit = "Club"
    elif int(card/100) == 3:
-       suit = "Dm"
+       suit = "Diamond"
    else:
-       suit = "Ht"
+       suit = "Heart"
 
    if card%100 == 1:
        value = "Ace"
@@ -67,7 +67,5 @@ def handvalue(target):
     return current
 
 
-bob = Hand(0, "Bob")
+
 fresh_deck()
-for x in range (1, 53):
-    print (deal(bob))
