@@ -63,8 +63,7 @@ def handvalue(target):
     return current
 
 
-<<<<<<< HEAD
-#hello
-=======
->>>>>>> 51ab9bc28c2b476648082eb662b40ac7ebf1ba5a
+
+#ididit
+
 
