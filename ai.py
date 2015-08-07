@@ -1,5 +1,5 @@
-import hand
-import deck
+from hand import *
+from deck import *
 
 
 class aihand:
@@ -12,14 +12,18 @@ class aihand:
         self.cards[self.size] = card
     def show_hand(self):
         for x in range (1, self.size+1):
-            return (self.cards[x])
+            print (self.cards[x])
     def choose(self):
-        need = 21-value
-        if need<3:
-            choice = "stand"
-        else:
-            choice = "hit"
-        return choice
+        need = 21-handvalue(self)
+        if need>3:
+            deal(self)
 
+bot = aihand (0, "Bro")
 
+bot.get(101)
+bot.show_hand()
+bot.get(202)
+bot.show_hand()
+bot.choose()
+bot.show_hand()
 
