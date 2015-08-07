@@ -13,8 +13,3 @@ def fresh_deck():
             deck[x] = 300 +  x - 26
         if x>39:
             deck[x] = 400 + x - 39
-<<<<<<< HEAD
-=======
-
-
->>>>>>> ab47f67f493ac0b3acd851fce22c8add2b0fc1e5
