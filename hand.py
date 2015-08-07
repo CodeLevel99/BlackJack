@@ -14,7 +14,11 @@ class Hand:
             print(self.cards[x])
 
 def deal(target):
+<<<<<<< HEAD
     while True:
+=======
+    for x in range (1, 53):
+>>>>>>> ab47f67f493ac0b3acd851fce22c8add2b0fc1e5
         draw = random.randrange (1, 53, 1)
         card = deck[draw]
         if card != 0:
@@ -66,9 +70,19 @@ def handvalue(target):
         current = current + check(target.cards[x], target)
     return current
 
+<<<<<<< HEAD
 bob = Hand(0, "Bob")
 fresh_deck()
 for x in range (1, 53):
     print (deal(bob))
+=======
+
+
+
+
+
+
+
+>>>>>>> ab47f67f493ac0b3acd851fce22c8add2b0fc1e5
 
 
