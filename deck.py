@@ -1,6 +1,5 @@
 deck = {}
-def fresh_deck():    
-    deck = {}
+def fresh_deck():
     #Spades = 100
     #Clubs = 200
     #Diamonds = 300

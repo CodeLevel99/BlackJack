@@ -14,13 +14,14 @@ class Hand:
             print(self.cards[x])
 
 def deal(target):
-    draw = deck[random.randrange (1, 53, 1)]
-    if draw == 0:
-        deal(target)
-    else:
-        target.get(draw)
-        deck [draw] = 0
-        return draw
+    for x in range (1, 53):
+        draw = random.randrange (1, 53, 1)
+        card = deck[draw]
+        if card != 0:
+            break
+    target.get(card)
+    deck [draw] = 0
+    return card
 
 def name(card):
    if int(card/100) == 1:
@@ -65,12 +66,12 @@ def handvalue(target):
         current = current + check(target.cards[x], target)
     return current
 
-bob = Hand(0, "Bob")
-fresh_deck()
-for x in range (1, 53):
-   print (deal(bob))
 
-#ididit
-#notreally
+
+
+
+
+
+
 
 
