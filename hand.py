@@ -70,3 +70,6 @@ fresh_deck()
 for x in range (1, 53):
    print (deal(bob))
 
+#ididit
+
+
