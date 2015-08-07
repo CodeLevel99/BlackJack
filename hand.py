@@ -1,4 +1,3 @@
-
 from deck import *
 import random
 
@@ -16,8 +15,12 @@ class Hand:
 
 def deal(target):
     draw = deck[random.randrange (1, 53, 1)]
-    target.get(draw)
-    return draw
+    if draw == 0:
+        deal(target)
+    else:
+        target.get(draw)
+        deck [draw] = 0
+        return draw
 
 def name(card):
    if int(card/100) == 1:
@@ -62,7 +65,10 @@ def handvalue(target):
         current = current + check(target.cards[x], target)
     return current
 
-
+bob = Hand(0, "Bob")
+fresh_deck()
+for x in range (1, 53):
+   print (deal(bob))
 
 #ididit
 #notreally
