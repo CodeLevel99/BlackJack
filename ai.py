@@ -18,12 +18,5 @@ class aihand:
         if need>3:
             deal(self)
 
-bot = aihand (0, "Bro")
 
-bot.get(101)
-bot.show_hand()
-bot.get(202)
-bot.show_hand()
-bot.choose()
-bot.show_hand()
 
