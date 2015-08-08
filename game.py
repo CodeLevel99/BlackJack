@@ -1,6 +1,7 @@
 from hand import *
 from deck import *
 from ai import *
+import sys
 
 #welcome message
 
@@ -29,6 +30,7 @@ while True:
     if cardsum > 21:
         print ("You're Busted!")
         break
+        sys.exit(0)
     else:
         print("Would you like another card??")
         hit = input("Type in 'hit' for another card or 'stay' if you are satisfied with your current hand.")
@@ -36,6 +38,25 @@ while True:
             break
         elif hit == "hit":
             print("You received a: " + name(deal(player)))
+#aiya
+
+ai.choose()
+
+#WHO WINS?????
+
+def whowins():
+    playerDiff = 21 - handvalue(player)
+    aiDiff = 21 - handvalue(ai)
+
+    if playerDiff < aiDiff:
+        print ("gratz")
+    elif aiDiff > playerDiff:
+        print ("lol")
+
+
+whowins()
+
+
 
 
           
